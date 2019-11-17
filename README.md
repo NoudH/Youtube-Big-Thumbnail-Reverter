@@ -2,10 +2,10 @@
 This will revert youtube's changes to make thumbnails visible from outer space.
 
 ## Result
-Before:
+#### Before:
 ![Before](https://i.gyazo.com/8d95d27f2a82d0ad7fbc5e6bb37f7527.png "Before")
 
-After:
+#### After:
 ![Result](https://i.gyazo.com/9d8647901ee88f0e0a3d95f95c1d9b34.png "Result")
 
 ## What happened?
