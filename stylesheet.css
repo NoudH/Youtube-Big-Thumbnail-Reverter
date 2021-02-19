@@ -1,34 +1,39 @@
+:root {
+    --nr-videos-per-row: 6; /* number of videos per row */
+    --nr-posts-per-row: 4; /* number of community posts per row */
+    --nr-movies-per-row: 9; /* number of movies per row */
+    --grid-padding: 5vw; /* left and right padding of main grid */
+    --display-avatar: none; /* to enable: inline-block */
+    --margin-between-items: 4px;
+    --margin-between-rows: 24px;
+}
+
+ytd-rich-grid-renderer {
+    --ytd-rich-grid-items-per-row: var(--nr-videos-per-row)!important;
+    --ytd-rich-grid-posts-per-row: var(--nr-posts-per-row)!important;
+    --ytd-rich-grid-movies-per-row: var(--nr-movies-per-row)!important;
+}
+
 ytd-rich-grid-renderer > div#contents.style-scope.ytd-rich-grid-renderer {
-    padding-left:5vw;
-    max-width: calc(100% - 10vw);
-}
-
-div#grid-header.style-scope.ytd-rich-grid-renderer {
-    padding-left:5vw;
-    max-width: calc(100% - 10vw);
-    margin-left: 0;
-}
-
-h3.style-scope.ytd-rich-grid-video-renderer {
-    margin-top: 5px;
+    padding: 0 var(--grid-padding);
+    max-width: calc(100% - 2 * var(--grid-padding));
+    display: flex;
+    justify-content: center;
 }
 
 ytd-rich-item-renderer {
-    margin-right: 4px;
-    margin-left: 0;
-    display: inline-block;
-    width: 210px;
-    margin-bottom: 24px;
+    margin-bottom: var(--margin-between-rows);
+    --ytd-rich-grid-item-margin: var(--margin-between-items)!important;
 }
 
 a#video-title.yt-simple-endpoint.style-scope.ytd-rich-grid-video-renderer {
     font-size: 1.4rem;
 }
 
-div#metadata *{
+div#metadata * {
     font-size: 1.3rem!important;
 }
 
 a#avatar-link {
-    display: none;
+    display: var(--display-avatar);
 }
