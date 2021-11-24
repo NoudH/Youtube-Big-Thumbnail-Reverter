@@ -21,7 +21,7 @@ Everyone that does not want to scroll 3 minutes to go through their recommended 
 This stylesheet can be used with extensions like Stylus ([Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) / [FireFox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)) or any extension that allows you to inject your own stylesheets on a website.
 
 ## Options
-You can change things like the amount of videos per row using the variables at the top of the stylesheet.css file.
+You can change things like the amount of videos per row using the variables at the top and bottom of the stylesheet.css file.
 
 ## Please note
 This stylesheet was made based on a screenshot I took a couple of days before youtube hit me with the big thumbnails update. However, since I only made a screenshot of my screen at it's native resolution (1920x1080p), this stylesheet might not have the same result on other resolutions. If this is the case, please use the issue tracker above (please provide a screenshot of what it should look like or your own css implemention/fixes).
